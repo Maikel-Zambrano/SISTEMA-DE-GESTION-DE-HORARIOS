@@ -1,0 +1,215 @@
+<!--<main class="index">
+    <header class="masthead d-flex">
+        <div class="container text-center my-auto">
+            <h1 class="mb-1">Sistema de Gestion de horarios</h1>
+            <h3 class="mb-5">
+                <em>Facultad de Ciencias Informáticas</em>
+            </h3>
+            <a class="btn btn-primary btn-lg" href="/signin">
+                Comencemos
+            </a>
+        </div>
+        <div class="overlay"></div>
+    </header>
+</main>-->
+
+<div class="go-top">
+    <span class="fas fa-angle-up"></span>
+  </div>
+
+    <!-- Menu de Navegacion -->
+    
+ 
+    <!-- Imagen Header -->
+    <div class="img-header">
+     <div class="welcome">
+       <h1>!Bienvenidos¡</h1>
+       <hr>
+       <p>Sistemas de Gestion de horarios</p>
+       <button id="abajo">Ver abajo</button>
+     </div>       
+    </div>
+    
+    <div class="skew-abajo"></div>
+
+    </header>
+    <div>  
+        <p>¿Dónde nos encontramos?</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2651843905146!2d-80.74894648514679!3d-0.954073935623341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be16bc985cbd9%3A0xe467d2d74337a4df!2sEdif.%20D%20(Facultad%20de%20Odontolog%C3%ADa)%20-%20ULEAM!5e0!3m2!1sen!2sec!4v1629765600729!5m2!1sen!2sec" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     
+    </div>
+  </div>
+
+<div> 
+    
+    <main>
+
+    <!-- Acerca de nosotros -->
+    <section class="acerca-de">
+    <div id="nosotros" class="info-container">
+      <h1>Acerca de Nosotros</h1>
+      
+      <div class="about-gallery">
+        <img src="/img/imagen1.jpg" alt="">
+        <img src="/img/imagen2.jpg" alt="">
+        <img src="/img/imagen3.jpg" alt="">
+      </div>
+
+      <div class="about-more"><button>Leer mas</button></div>
+
+    </div>
+    </section>
+
+   
+
+ </main> 
+
+ <!-- Footer -->
+ <footer class="footer">
+   <div class="skew-arriba"></div>
+  <div class="deg-footer"></div>
+ 
+  <div class="ejeZfooter">
+  <div class="footer-content">
+   <div class="footer-title">
+     <h2>Formulario de Contacto</h2>
+     <hr>
+   </div>
+
+   <div id="contacto" class="formulario-content">
+     <form id="formulario">
+        <label for="user">Nombre:</label>
+        <input type="text" id="user" name="user" placeholder="Ingresa tu Nombre">
+   
+        <label for="email">Correo Electronico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu Correo Electronico">
+   
+        <label for="message">Escribe tu mensaje</label>
+        <textarea name="menssage" id="message"></textarea>
+   
+        <div class="send"><button>Enviar</button></div>
+   
+        <div class="mensaje-form">
+          <p>Escribenos un mensaje, con gusto tendras una respuesta de parte de nosotros en muy poco tiempo.</p>
+        </div>
+     </form>
+   </div>
+
+   <div class="footer-text">
+     <p>&copy; FACCI - 2021 | Todos los derechos reservados.</p>
+     
+   </div>
+  
+  </div>
+</div>
+ 
+  <footer >
+          
+        </footer> 
+        </footer>
+ <script>
+     // Navegation Menu
+let btnMenu = document.querySelector('.btn-menu');
+let barIconX = document.querySelector('.btn-menu i');
+let menu = document.querySelector('.list-container');
+let menuContent = document.querySelector('.menu');
+var activador = true;
+
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+
+ 
+btnMenu.addEventListener('click', (event) => {
+
+  //Icon X
+  barIconX.classList.toggle('fa-times');
+
+   if(activador){
+     menu.style.left = '0%'; 
+     menu.style.transition = '0.5s';
+  
+     activador = false;
+   }
+   else{
+    activador = false;
+    menu.style.left = '-100%';
+
+    activador = true;
+   }
+
+});
+
+// Add class "active"
+let enlaces = document.querySelectorAll('.lists li a');
+
+enlaces.forEach((element) => {
+   
+  element.addEventListener('click', (event) => {
+   enlaces.forEach((link) => {
+     link.classList.remove('active');
+   });
+    event.target.classList.add('active');
+
+  });
+
+});
+
+//Scroll Efect
+
+ let prevScrollPos = window.pageYOffset;
+ let goTop = document.querySelector('.go-top');
+
+window.onscroll = () => {
+  
+  //Hide & Show - Scroll Menu (Function)
+  let currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    menuContent.style.top = '0px';
+    menuContent.style.transition = '0.5s';
+  }else{
+    menuContent.style.top = '-60px';
+    menuContent.style.transition = '0.5s';
+  }
+  prevScrollPos = currentScrollPos;
+  
+  //Scoll Menu & Go Top & See Down (Styles)
+  let arriba = window.pageYOffset;
+
+  //Conditions
+  if(arriba <= 600){
+    menuContent.style.borderBottom = 'none';
+
+    //Ocultar Go Top
+    goTop.style.right = '-100px';
+  }else{
+    menuContent.style.borderBottom = '3px solid #9acd32';
+
+    //Mostrar Go Top
+    goTop.style.right = '0px';
+  }
+  
+}
+
+//Go Top Click
+goTop.addEventListener('click', () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+let abajo = document.querySelector('#abajo');
+
+abajo.addEventListener('click', () => {
+  document.body.scrollTop = 600;
+  document.documentElement.scrollTop = 600;
+  
+});
+
+
+ </script>

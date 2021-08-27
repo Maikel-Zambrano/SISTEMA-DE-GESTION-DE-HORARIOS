@@ -1,0 +1,120 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each links}}
+        <div class="col-md-6">
+            <div class="card text-center bg-dark text-light">
+                <div class="card-body">
+                    <!--<a href="{{url}}" target="_blank" class="text-light">-->
+                        <h3 class="card-title text-uppercase">
+                            {{title}}
+                        </h3>
+                    <!--</a>-->
+                    <p class="m-2">{{description}}</p>
+                    <p class="text-muted">
+                       {{timeago created_at}}
+                    </p>
+                     <table  id="buscar" align="center" border="4" bordercolor="black"
+                  cellpadding="0" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th bgcolor="green">hora</th>
+                        <th>lunes</th>
+                        <th>martes</th>
+                        <th>miercoles</th>
+                        <th>jueves</th>
+                       <th>viernes</th>
+                    </tr>
+                    </thead>
+                    <tbody >
+                        <tr>
+                            <th bgcolor="green">{{this.hora_inicio}}</th>
+                            <th>{{this.lunes}}</th>
+                            <th>{{this.martes}}</th>
+                            <th>{{this.miercoles}}</th>
+                            <th>{{this.jueves}}</th>
+                            <th>{{this.viernes}}</th>
+                             </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th bgcolor="green">{{this.horai_nicio2}}</th>
+                            <th>{{this.lunes2}}</th>
+                            <th>{{this.martes2}}</th>
+                            <th>{{this.miercoles2}}</th>
+                            <th>{{this.jueves2}}</th>
+                            <th>{{this.viernes2}}</th>
+                             </tr>
+                    </tbody>
+                    <tbody><tr><th bgcolor="green">{{this.horai_nicio3}}</th>
+                            <th>{{this.lunes3}}</th>
+                            <th>{{this.martes3}}</th>
+                            <th>{{this.miercoles3}}</th>
+                            <th>{{this.jueves3}}</th>
+                            <th>{{this.viernes3}}</th></tr></tbody>
+                            <tbody><tr>
+                                
+                            <th bgcolor="green">{{this.horai_nicio4}}</th>
+                            <th>{{this.lunes4}}</th>
+                            <th>{{this.martes4}}</th>
+                            <th>{{this.miercoles4}}</th>
+                            <th>{{this.jueves4}}</th>
+                            <th>{{this.viernes4}}</th>
+
+                            </tr></tbody>
+                            <tbody><tr>
+                                <th bgcolor="green">{{this.horai_nicio5}}</th>
+                            <th>{{this.lunes5}}</th>
+                            <th>{{this.martes5}}</th>
+                            <th>{{this.miercoles5}}</th>
+                            <th>{{this.jueves5}}</th>
+                            <th>{{this.viernes5}}</th>
+                            </tr></tbody>
+                            
+                  </table>
+                    <a class="btn btn-danger" href="/links/delete/{{id}}">
+                        Eliminar 
+                    </a>
+                    <a class="btn btn-secondary" href="/links/edit/{{id}}">
+                        Editar
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center bg-dark text-light">
+                <p>No existen horarios disponibles</p>
+                <a href="/links/add" class="text-success">Registra uno!</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<footer >
+          <div id="pie_pagina" class="contenedor_links">
+            <div class="redes_sociales">
+              <h1>Redes sociales</h1>
+              <div class="imagenes_redes"><a href=""><img src="/img/instagram.png"> </a>
+              <a href=""> <img src="/img/facebook.png"> </a>
+              <a href=""><img src="/img/youtube.png"> </a>
+              <a href=""><img src="/img/gorjeo.png"> </a>
+            </div> 
+            </div>
+            <div class="interes">
+              <h1>Links de interés</h1>
+              <li>Pagina de la ULEAM</li>
+              <li>Correo Estudiantil</li>
+              <li>Office 365</li>
+              <li>Vicerrectorado Académico</li>
+              <li>Unidades Académicas</li>
+            </div>
+            <div class="links_facci">
+              <h1>Links de la facci</h1>
+              <li>Coordinación de Carrera</li>
+              <li>Decanato</li>
+              <li>Secretariado</li>
+              <li>Comisión de titulación</li>
+            </div>
+          </div>
+        </footer>

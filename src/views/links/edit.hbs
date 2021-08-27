@@ -1,0 +1,219 @@
+<!--<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card bg-dark border border-dark">
+                <div class="card-body">
+                    <form action="/links/edit/{{links.id}}" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="title" class="form-control bg-dark text-light" placeholder="titulo"
+                                value="{{links.title}}" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" name="hora_inicio" class="form-control bg-dark text-light" placeholder="hora"
+                                value="{{links.hora_inicio}}">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lunes" class="form-control bg-dark text-light" placeholder="lunes"
+                                value="{{links.lunes}}" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="martes" class="form-control bg-dark text-light" placeholder="martes"
+                                value="{{links.martes}}" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="miercoles" class="form-control bg-dark text-light" placeholder="miercoles"
+                                value="{{links.miercoles}}" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="jueves" class="form-control bg-dark text-light" placeholder="jueves"
+                                value="{{links.jueves}}" autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="viernes" class="form-control bg-dark text-light" placeholder="viernes"
+                                value="{{links.viernes}}" autofocus>
+                        </div>
+
+
+                        <div class="form-group">
+                            <textarea name="description" rows="2" class="form-control bg-dark text-light"
+                                placeholder="Descripcion">{{links.description}}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+<div class="container p-4">
+    <div class="row">
+        <div class="">
+
+            <div class="card bg-dark">
+                <div class="card-body">
+                    <h1 class="text-light mb-3 h4">Crear un nuevo Horario</h1>
+                    
+                    <form action="/links/edit/{{links.id}}" method="POST">
+                   <div class="container p-4">
+ <div class="row">
+  <div class="col">
+   <input type="time" name="hora_inicio" class="form-control bg-dark text-light" placeholder="hora" value="{{links.hora_inicio}}">
+  </div>
+  <div class="col">
+    <input type="text" name="lunes" class="form-control bg-dark text-light" placeholder="lunes" value="{{links.lunes}}">
+  </div>
+  <div class="col">
+     <input type="text" name="martes" class="form-control bg-dark text-light" placeholder="martes" value="{{links.martes}}">
+  </div>
+  <div class="col">
+    <input type="text" name="miercoles" class="form-control bg-dark text-light" placeholder="miercoles" value="{{links.miercoles}}">
+  </div>
+  <div class="col">
+     <input type="text" name="jueves" class="form-control bg-dark text-light" placeholder="jueves" value="{{links.jueves}}">
+  </div>
+  <div class="col">
+     <input type="text" name="viernes" class="form-control bg-dark text-light" placeholder="viernes" value="{{links.viernes}}">
+  </div>
+</div>
+  <!--//////////////////////////////////////////////////////////////////////////////////////////////-->
+ <div class="row">
+  <div class="col">
+   <input type="time" name="horai_nicio2" class="form-control bg-dark text-light" placeholder="hora" value="{{links.horai_nicio2}}">
+  </div>
+  <div class="col">
+    <input type="text" name="lunes2" class="form-control bg-dark text-light" placeholder="lunes" value="{{links.lunes2}}">
+  </div>
+  <div class="col">
+     <input type="text" name="martes2" class="form-control bg-dark text-light" placeholder="martes" value="{{links.martes2}}">
+  </div>
+  <div class="col">
+    <input type="text" name="miercoles2" class="form-control bg-dark text-light" placeholder="miercoles" value="{{links.miercoles2}}">
+  </div>
+  <div class="col">
+     <input type="text" name="jueves2" class="form-control bg-dark text-light" placeholder="jueves" value="{{links.jueves2}}">
+  </div>
+  <div class="col">
+     <input type="text" name="viernes2" class="form-control bg-dark text-light" placeholder="viernes" value="{{links.viernes2}}">
+  </div>
+</div>
+  <!--//////////////////////////////////////////////////////////////////////////////////////////////-->
+  <div class="row">
+  <div class="col">
+   <input type="time" name="horai_nicio3" class="form-control bg-dark text-light" placeholder="hora" value="{{links.horai_nicio3}}">
+  </div>
+  <div class="col">
+    <input type="text" name="lunes3" class="form-control bg-dark text-light" placeholder="lunes" value="{{links.lunes3}}">
+  </div>
+  <div class="col">
+     <input type="text" name="martes3" class="form-control bg-dark text-light" placeholder="martes" value="{{links.martes3}}">
+  </div>
+  <div class="col">
+    <input type="text" name="miercoles3" class="form-control bg-dark text-light" placeholder="miercoles" value="{{links.miercoles3}}">
+  </div>
+  <div class="col">
+     <input type="text" name="jueves3" class="form-control bg-dark text-light" placeholder="jueves" value="{{links.jueves3}}">
+  </div>
+  <div class="col">
+     <input type="text" name="viernes3" class="form-control bg-dark text-light" placeholder="viernes" value="{{links.viernes3}}">
+  </div>
+</div>
+  <!--//////////////////////////////////////////////////////////////////////////////////////////////-->
+  <div class="row">
+  <div class="col">
+   <input type="time" name="horai_nicio4" class="form-control bg-dark text-light" placeholder="hora" value="{{links.horai_nicio4}}">
+  </div>
+  <div class="col">
+    <input type="text" name="lunes4" class="form-control bg-dark text-light" placeholder="lunes" value="{{links.lunes4}}">
+  </div>
+  <div class="col">
+     <input type="text" name="martes4" class="form-control bg-dark text-light" placeholder="martes" value="{{links.martes4}}">
+  </div>
+  <div class="col">
+    <input type="text" name="miercoles4" class="form-control bg-dark text-light" placeholder="miercoles" value="{{links.miercoles4}}">
+  </div>
+  <div class="col">
+     <input type="text" name="jueves4" class="form-control bg-dark text-light" placeholder="jueves" value="{{links.jueves4}}">
+  </div>
+  <div class="col">
+     <input type="text" name="viernes4" class="form-control bg-dark text-light" placeholder="viernes" value="{{links.viernes4}}">
+  </div>
+</div>
+  <!--//////////////////////////////////////////////////////////////////////////////////////////////-->
+  <div class="row">
+  <div class="col">
+   <input type="time" name="horai_nicio5" class="form-control bg-dark text-light" placeholder="hora" value="{{links.horai_nicio5}}">
+  </div>
+  <div class="col">
+    <input type="text" name="lunes5" class="form-control bg-dark text-light" placeholder="lunes" value="{{links.lunes5}}">
+  </div>
+  <div class="col">
+     <input type="text" name="martes5" class="form-control bg-dark text-light" placeholder="martes" value="{{links.martes5}}">
+  </div>
+  <div class="col">
+    <input type="text" name="miercoles5" class="form-control bg-dark text-light" placeholder="miercoles" value="{{links.miercoles5}}">
+  </div>
+  <div class="col">
+     <input type="text" name="jueves5" class="form-control bg-dark text-light" placeholder="jueves" value="{{links.jueves5}}">
+  </div>
+  <div class="col">
+     <input type="text" name="viernes5" class="form-control bg-dark text-light" placeholder="viernes" value="{{links.viernes5}}">
+  </div>
+</div>
+  <!--//////////////////////////////////////////////////////////////////////////////////////////////-->
+</div>
+                        <div class="card-body">
+                          <input type="text" name="title" class="form-control bg-dark text-light" placeholder="titulo"
+                                value="{{links.title}}" autofocus>
+                        </div>
+                        
+                        <div class="card-body">
+                            <textarea name="description" rows="2" class="form-control bg-dark text-light"
+                                placeholder="Description">{{links.description}}</textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button  class="btn btn-success btn-block" >
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+ <footer >
+          <div id="pie_pagina" class="contenedor_links">
+            <div class="redes_sociales">
+              <h1>Redes sociales</h1>
+              <div class="imagenes_redes"><a href=""><img src="/img/instagram.png"> </a>
+              <a href=""> <img src="/img/facebook.png"> </a>
+              <a href=""><img src="/img/youtube.png"> </a>
+              <a href=""><img src="/img/gorjeo.png"> </a>
+            </div> 
+            </div>
+            <div class="interes">
+              <h1>Links de interés</h1>
+              <li>Pagina de la ULEAM</li>
+              <li>Correo Estudiantil</li>
+              <li>Office 365</li>
+              <li>Vicerrectorado Académico</li>
+              <li>Unidades Académicas</li>
+            </div>
+            <div class="links_facci">
+              <h1>Links de la facci</h1>
+              <li>Coordinación de Carrera</li>
+              <li>Decanato</li>
+              <li>Secretariado</li>
+              <li>Comisión de titulación</li>
+            </div>
+          </div>
+        </footer>
+ 
+  

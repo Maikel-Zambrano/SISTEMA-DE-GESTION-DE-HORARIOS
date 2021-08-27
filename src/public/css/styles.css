@@ -1,0 +1,148 @@
+body {
+    background: white;
+    font-family: "Oswald", sans-serif;
+    
+  }
+  
+  .index {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .navbar {
+    background: #4caf50 !important;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+  }
+  
+  .masthead {
+    color: white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: url("/img/background.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .masthead h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh;
+    }
+    .masthead h1 {
+      font-size: 5.5rem;
+    }
+  }
+  
+.visualizacion{
+  width: 100%;
+  height: auto;
+  background-color: rgba(241, 241, 241, 0.993);
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+}
+.visualizacion img{
+  width: 450px;
+  padding-top: 27px;
+  padding-block-end: 10px;
+  margin-left: 50px;
+}
+.visualizacion p{
+  font-size: 80px;
+  padding-top: 50px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: auto;
+  margin: 0%;
+}
+
+@media only screen and (max-width: 800px)  {
+  .visualizacion{
+      display: block;
+      height: auto;
+      margin-top: 50px;
+  }
+  .contenedor_links .redes_sociales img {
+      height: 40px;
+      width: 40px;
+  }
+  .visualizacion img{
+      margin: 0%;
+      width: 100%;
+      
+  }
+  .contenedor_links{
+      margin-block-start: 200px;
+      
+  }
+  .contenedor_links div{
+      padding-block-end: 40px;
+  }
+  .red
+ 
+  .visualizacion p{
+      font-size: 50px;
+      
+  }
+  .buscar{
+      width: 100%;
+      margin: 0%;
+  }
+  .buscar .btn_buscar{
+      width: 100%;
+      display: flex;
+     
+  }
+  .cabecera{
+      padding: 0%;
+      margin-left: 0%;
+  }
+  .facultad img{
+      width: 100px;
+      height: auto;
+      margin: 0%;
+      padding: 0%;
+  }
+  .facultad{
+      margin: 0%;
+      padding-left: 0%;
+      
+  }
+  .cabecera .cerrar_sesion a{
+      font-size: 20px;
+  }
+
+}
+.boton_verde{
+  color: white;
+  text-decoration: none;
+
+}
+.boton_verde:hover{
+  color: #4caf50;
+}
+.btn-verde:hover{
+  color: #4caf50;
+}
+#map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

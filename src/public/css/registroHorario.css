@@ -1,0 +1,306 @@
+
+.cerrar_sesion a{
+    margin-left: 15px;
+}
+.cabecera{
+    background-color: #0fff2f98;
+    height: 80px;
+    display: flex;
+    width: 100%;
+    
+}
+.cabecera .facultad{
+    margin-left: 50px;
+    padding-top: 25px;
+    width: 70%;
+    height: auto;
+    
+}
+.cabecera .facultad h1 a{
+    color: #0ec23b;
+    font-family: 'Roboto', sans-serif;
+}
+.cabecera .cerrar_sesion{
+    width: 30%;
+    margin-right: 50px;
+    padding-top: 35px;
+    height: auto;
+}
+.cabecera .cerrar_sesion a{
+    float: right;
+    text-decoration: none;
+    color: white;
+}
+main{
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+}
+.titulo_pagina{
+    width: auto;
+    padding-block-end: 50px;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+.titulo_pagina h2{
+    color: black;
+    font-size: 30px;
+}
+
+footer{
+    width: 100%;
+    background-color: #4caf50;
+    margin-block-start: 80px;
+}
+footer p{
+    color: white;
+}
+.contenedor_links{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 50px;
+
+}
+.imagenes_redes{
+    display: flex;
+    text-align: center;
+    
+}
+ .redes_sociales img{
+    width: 50px;
+    height: 50px;
+    
+}
+.interes{
+    width: 100%;
+}
+.links_facci{
+    width: 100%;
+}
+.redes_sociales{
+    width: 100%;
+    margin-left: 50px;
+}
+.contenedor_todo{
+    width:100%;
+    height: auto;
+    position: relative;
+    background-color: rgba(222, 231, 222, 0.89);
+    margin:auto;
+    max-width: 1300px;
+}
+.form_registro_materias {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    height: auto;
+}
+.form_registro_materias  input{
+    width: 60%;
+    margin-top: 80px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+    float: right;
+}
+.form_registro_materias  select{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+    display: block;
+}
+.form_registro_materias  .nivel_sistemas{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+    display: none;
+}
+
+.form_registro_materias  .nivel_ti{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+    display: none;
+}
+.form_registro_materias  p {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    display: block;
+    margin-top: 30px;
+
+    
+}
+.form_registro_materias p input{
+    margin-top: 0%;
+}
+ .seleccion{
+    width: 100%;
+    margin-right: 0px;
+    padding-block-end: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+.seleccion button{
+    float: right;
+    cursor: pointer;
+}
+.seleccion button:hover{
+    background-color:yellowgreen;
+    color: black;
+}
+.contenedor_seleccion{
+    height: 300px;
+    width: 100%;
+    margin-top: 150px;
+    background-color: rgba(96, 146, 76, 0.356);
+}
+.contenedor_seleccion table{
+    width: 100%;
+}
+.escribir{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-block-end: 50px;
+}
+
+.form_registro_materias  button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+   /*background: #46A2FD;*/
+   background: rgb(73, 72, 72);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;margin: 15px;
+}
+.form_registro_materias button:hover{
+    background-color:yellowgreen;
+    color: black;
+}
+.botones{
+    display: flex;
+    padding: 15px;
+}
+.ag{
+    display: none;
+}
+@media only screen and (max-width:800px){
+    main{
+        margin-top: 0px;
+        font-size: 80%;
+    }
+    .contenedor_todo{
+        flex-direction: column;
+        display: block;
+        width: 100%;
+        margin: 0%;
+        
+    }
+    .contenedor_links{
+        margin-block-start: 200px;
+        
+    }
+    .contenedor_links div{
+        padding-block-end: 40px;
+    }
+    .form_registro_materias{
+        display: block;
+        margin: 0%;
+        padding: 50px;
+        width: 100%;
+    }
+    .form_registro_materias .seleccion{
+        width: 100%; 
+        padding-block-end: 0%;
+    }
+    .form_registro_materias .escribir{
+        width: 100%;
+        margin: 0%;
+        margin-top: 0%;
+    }
+    .cabecera{
+        padding: 0%;
+        margin-left: 0%;
+    }
+    .facultad img{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        padding: 0%;
+    }
+    .facultad{
+        margin: 0%;
+        padding-left: 0%;
+        
+    }
+    .cabecera .cerrar_sesion a{
+        font-size: 20px;
+    }
+}
+@media  screen and (min-width:375px) and (max-width:800px){
+
+    .cabecera{
+        padding: 0%;
+        margin-left: 0%;
+    }
+    .facultad img{
+        width: 100px;
+        height: auto;
+        margin: 0%;
+        padding: 0%;
+    }
+    .facultad{
+        margin: 0%;
+        padding-left: 0%;
+        
+    }.cabecera .cerrar_sesion{
+        width: 100%;
+    }
+    .cabecera .cerrar_sesion a{
+        font-size: 15px;
+        
+    }
+    .titulo_pagina .titulo h2{
+        color: black;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    .contenedor_links{
+        margin-block-start: 200px;
+        display: block;
+        
+    }
+    .contenedor_links div{
+        text-align: center;
+    }
+    .redes_sociales{
+        margin-left: 0px;
+        
+    }
+     .imagenes_redes{
+        text-align: center;
+        margin-left: 25%;
+    }
+}
